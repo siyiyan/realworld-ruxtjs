@@ -54,6 +54,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /hongtang/realworld-nuxtjs
+          mv * /tmp
           wget https://github.com/siyiyan/realworld-ruxtjs/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
           npm install --production
